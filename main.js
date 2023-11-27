@@ -37,10 +37,10 @@ function displaySensorData(data) {
     let weatherText;
 
     if (temperature > 25) {
-        temperatureImage = 'imagenes/caliente.gif';
+        temperatureImage = 'caliente.gif';
         weatherText = getHotWeatherText();
     } else {
-        temperatureImage = 'imagenes/frio2.gif';
+        temperatureImage = 'frio2.gif';
         weatherText = getColdWeatherText();
     }
 
