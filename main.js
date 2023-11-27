@@ -45,12 +45,14 @@ function displaySensorData(data) {
     }
 
     sensorValuesDiv.innerHTML = `
-        <p>Temperatura: ${temperature} °C</p>
-        <p>Humedad: ${data.humidity} %</p>
-        <img src="${temperatureImage}" alt="Temperature Image">
+        <p><img src="temperatura.png" alt="Temperature Icon" class="sensor-icon" style="width: 30px; margin-right: 10px; height: 30px;">Temperatura: ${temperature} °C</p>
+        <p><img src="humedad.png" alt="Humidity Icon" class="sensor-icon" style="width: 30px; margin-right: 10px; height: 30px;">Humedad: ${data.humidity} %</p>
+        <img src="${temperatureImage}" alt="Temperature Image" style="max-width: 100%; height: auto;">
         <p>${weatherText}</p>
     `;
 }
+
+
 
 // Function to get random hot weather text
 function getHotWeatherText() {
